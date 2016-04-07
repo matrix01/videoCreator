@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P3S-9g-eem">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWC-vA-l4l">
+                                <rect key="frame" x="117" y="142" width="180" height="64"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.88173649639673679" blue="0.41367748141815053" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Ohn-6M-ND9"/>
+                                    <constraint firstAttribute="height" constant="64" id="peq-aN-KBH"/>
+                                </constraints>
+                                <state key="normal" title="Create And Save Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAndSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGC-T4-RB0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IQV-zo-oR5">
+                                <rect key="frame" x="20" y="222" width="374" height="494"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IQV-zo-oR5" secondAttribute="trailing" constant="20" id="4By-Oo-wZD"/>
+                            <constraint firstItem="IQV-zo-oR5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="C5U-WT-5TT"/>
+                            <constraint firstItem="CWC-vA-l4l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-194" id="CV8-IA-zpj"/>
+                            <constraint firstItem="CWC-vA-l4l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YQW-L8-FPn"/>
+                            <constraint firstItem="IQV-zo-oR5" firstAttribute="top" secondItem="CWC-vA-l4l" secondAttribute="bottom" constant="16" id="eZF-Bw-ixC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IQV-zo-oR5" secondAttribute="bottom" constant="20" id="osY-Xb-sNr"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="imageView" destination="IQV-zo-oR5" id="1oE-Gz-0t5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="239"/>
+        </scene>
+    </scenes>
+</document>
